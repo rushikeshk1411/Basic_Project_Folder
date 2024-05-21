@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<style>
+    #container{
+        width: 300px;
+        height: 300px;
+        color: white;
+        background: black;
+    }
+</style>
+<body>
+    <div id="container">
+        <div>
+            
+        </div>
+    </div>
+    <script>
+        // let data = "Rushikesh";
+        // fetch("https://fakestoreapi.com/products")
+        // .then(res1 => 
+        //     if(res1.)
+        //     data = res1.json(), console.log(data))
+        // .then(res=> data=res, console.log("Hello World") )
+        // .catch(error=>console.log("Error aa agaya janab"));
+        // const val = document.getElementById("container");
+        // val.innerHTML = data;
+        // console.log(data);
+        // console.log(data.id);
+
+        // Define the URL for the FakeStoreAPI endpoint
+const apiUrl = 'https://fakestoreapi.com/products';
+
+var maindata;
+fetch(apiUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Fetched data:', data);
+  })
+  .then(data=>{
+    maindata = data;
+  })
+  .catch(error => {
+    console.error('Fetch error:', error);
+  });
+  const val = document.getElementById("container");
+  console.log(val);
+  val.innerHTML = data[0];
+  console.log(maindata);
+    </script>
+</body>
+</html>

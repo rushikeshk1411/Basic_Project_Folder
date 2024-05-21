@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(138,213,215)
+}
+.main_container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 10rem;
+    gap: 2.7rem;
+}
+#errors{
+    color: red;
+    background-color: yellow;
+}
+h1{
+    font-size: 3rem;
+}
+input{
+    position: relative;
+    height: 2.6rem;
+    width: 35rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+#addbutton{
+    border-radius: 10px;
+}
+
+.container{
+    max-width: 40rem;
+    min-height: 20rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: rgb(28, 241, 241);
+    border-radius: 20px;
+    text-align: justify;
+    word-break: keep-all;
+}
+ul{
+    max-width: 20rem;
+    text-align: justify;
+    word-break: keep-all;
+}
+li{
+    width: 100%;
+    list-style: disc; 
+    /* margin: 2px; */
+    text-align: justify;
+    word-break: keep-all;
+}
+#complete, #Remove{
+    margin: 2px;
+    border-radius: 10px;  
+}
+#full-item{
+    display: flex;
+}
+#left-item{
+    float: left;
+}
+#right-item{
+    float: right;
+}

@@ -1,0 +1,14 @@
+    #cont{
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        #cont>div{
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #cont>div>img{
+            width: 100px;
+            height: 150px;
+        }

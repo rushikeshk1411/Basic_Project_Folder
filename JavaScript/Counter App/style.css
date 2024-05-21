@@ -1,0 +1,44 @@
+body{
+    /* background-color: rgb(167,219,216); */
+}
+.main_container{
+    gap: 1rem;
+}
+button{
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0.3rem;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in-out;
+    box-shadow: 5px 5px 5px blue;
+    justify-items: flex-end;
+}
+.counter, .display{
+    box-shadow: 5px 5px 5px;
+    height: 31vh;
+    width: 40vw;
+}
+.counter{
+    background-color: rgb(97, 97, 206);
+}
+button:hover{
+    background-color: aqua;
+    transform: scale(1.05);
+}
+.DarkButton{
+    width: 20vw;
+    font-weight: 700;
+    font-weight: 20px;
+    letter-spacing: 1px;
+}
+.Dark{
+    background-color: black;
+    color: white;
+}
+.backimg{
+    background-size: cover;
+    animation: forwards;
+}
+.backnone{
+    background-image: none;
+    opacity: 0;
+}
